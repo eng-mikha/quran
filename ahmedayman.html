@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/a.css">
+    <script src="https://kit.fontawesome.com/a60a90b429.js" crossorigin="anonymous"></script>
+    <title>Quran</title>
+</head>
+<body>
+    <!-- the parent div  -->
+    <div class="parent">
+        <nav>
+            <div class="container">
+                <h1>Elfeky<span>.bros</span></h1>
+                <span>
+                    <span></span>
+                    <span class="small"></span>
+                    <span></span>
+                </span>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#read">Read</a></li>
+                    <li><a href="#listen">Listen</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="fpage" id="home">
+            <!-- first page words  -->
+            <img src="image/mosq.png" class="back">
+            <div class="container">
+                <div class="fpword">
+                    <div class="wor">
+                        <h2>
+                            Listen And Read Quran Everyday.
+                            Add On Your Daily Routine.
+                        </h2>
+                        <p>
+                            The Quran is the central religious text of islam, Muslims believe the Qur'an is the book
+                            of divine guidance and direction for mankind.
+                        </p>
+                    </div>
+                    <div class="b">
+                        <div class="read">Read Quran</div>
+                        <div class="aud">Quran Audio</div>
+                    </div>
+                </div>
+                <!-- first page image  -->
+                <img src="image/mos7af.png" class="cir" alt="">
+            </div>
+        </section>
+        <!-- second page photo  -->
+        <section class="ndpage" id="about">
+            <div class="container">
+                <div class="cont">
+                    <img src="image/aboayman.png" alt="">
+                </div>
+                <!-- second page about  -->
+                <div class="aboutw">
+                    <h3>
+                        About This Website 
+                    </h3>
+                    <p>
+                        The Nobel Quran is the central religious text of islam, Muslims believe the Qur'an is the book
+                        of divine guidance and direction for mankind, and consider the original Arabic text the final
+                        revelation of Allah.
+                    </p>
+                    <p>
+                        The Reader in this website is Ahmed Ayman Elfeky
+                    </p>
+                    <button class="story">
+                        Read Our Story
+                    </button>
+                </div>
+            </div>
+
+        </section>
+        <!-- third page read  -->
+        <section class="thpage" id="read">
+            <div class="container">
+                <h3>
+                    Read Holy Quran 
+                </h3>
+                <div class="thirdpbar">
+                    <div class="but">
+                        <button class="b1">Show Surah</button>
+                        <button class="b2">Show Juz'</button>
+                    </div>
+                    <div class="ser">
+                        <input type="search" placeholder="Search" class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <!-- surahs for read  -->
+                <div class="readsurah">
+                    <div class="surah">
+                        <h4>الفاتحة</h4>
+                        <span>عدد الآيات 7</span>
+                    </div>
+                    <div class="surah">
+                        <h4>البقرة</h4>
+                        <span>عدد الآيات 286</span>
+                    </div>
+                    <div class="surah">
+                        <h4>آل عمران</h4>
+                        <span>عدد الآيات 200</span>
+                    </div>
+                    <div class="surah">
+                        <h4>النساء</h4>
+                        <span>عدد الآيات 176</span>
+                    </div>
+                    <div class="surah">
+                        <h4>المائدة</h4>
+                        <span>عدد الآيات 120</span>
+                    </div>
+                    <div class="surah">
+                        <h4>الأنعام</h4>
+                        <span>عدد الآيات 165</span>
+                    </div>
+                    <div class="surah">
+                        <h4>الأعراف</h4>
+                        <span>عدد الآيات 206</span>
+                    </div>
+                    <div class="surah">
+                        <h4>الأنفال</h4>
+                        <span>عدد الآيات 75</span>
+                    </div>
+                    <div class="surah">
+                        <h4>التوبة</h4>
+                        <span>عدد الآيات 129</span>
+                    </div>
+                    <div class="surah">
+                        <h4></h4>
+                        <span></span>
+                    </div>
+                    
+                </div>
+                <!-- show all surahs button  -->
+                <div class="show">
+                    <button>Show All Surah</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- fourth page listen  -->
+        <section class="f4page" id="listen">
+            <div class="container">
+                <h3>Listen Holy Quran By Ahmed Ayman Elfeky</h3>
+                <div class="fou">
+                    <div class="showcontrols">
+                        <!-- start audio shape -->
+                        <div class="player">
+                            <div class="wrapper">
+                                <div class="details">
+                                    <!-- <div class="now-playing">PLAYING x OF y</div> -->
+                                    <!-- <div class="track-art"></div> -->
+                                    <div class="track-name track-art">سورة الرحمن</div>
+                                    <div class="track-artist">أحمد أيمن الفقى</div>
+                                </div>
+                        
+                                <div class="slider_container">
+                                    <div class="current-time">00:00</div>
+                                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                                    <div class="total-duration">00:00</div>
+                                </div>
+                        
+                                <div class="slider_container">
+                                    <i class="fa fa-volume-down"></i>
+                                    <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                                    <i class="fa fa-volume-up"></i>
+                                </div>
+                        
+                                <div class="buttons">
+                                    <div class="random-track" onclick="randomTrack()">
+                                        <i class="fas fa-random fa-2x" title="random"></i>
+                                    </div>
+                                    <div class="prev-track" onclick="prevTrack()">
+                                        <i class="fa fa-step-backward fa-2x"></i>
+                                    </div>
+                                    <div class="playpause-track" onclick="playpauseTrack()">
+                                        <i class="fa fa-play-circle fa-5x"></i>
+                                    </div>
+                                    <div class="next-track" onclick="nextTrack()">
+                                        <i class="fa fa-step-forward fa-2x"></i>
+                                    </div>
+                                    <div class="repeat-track" onclick="repeatTrack()">
+                                        <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                                    </div>
+                                </div>
+                        
+                                <div id="wave">
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end audio shape -->
+
+
+                        <!-- <p>سورة الفاتحة</p>
+                        <p>رقم السورة : 1</p>
+                        <p>الجزء الأول</p>
+                        <audio src="audio/yt5s.com - مولد شبح الهرم ياخوانااااا {Amir Fox} (128 kbps).mp3" controls></audio> -->
+                    </div>
+                    <div class="allsurah">
+                        <div class="su">الفاتحة</div>
+                        <div class="su">البقرة</div>
+                        <div class="su">آل عمران</div>
+                        <div class="su">النساء</div>
+                        <div class="su">المائدة</div>
+                        <div class="su">الأنعام</div>
+                    </div>
+                </div>
+                <button>Open Quran Player</button>
+            </div>
+            
+        </section>
+            <!-- fifth page our app  -->
+        <section class="f5page" id="app">
+            <div class="container">
+                <div class="w">
+                    <h4>
+                        Recitering & Listening Quran Is More Easy Now On Our Mobile App 
+                    </h4>
+                    <p>
+                        The Quran is the central religious text of islam, Muslims believe the Qur'an is the book
+                        of divine guidance and direction for mankind.
+                    </p>
+    
+                    <!-- app download button  -->
+                    
+                    <div class="app">
+                        <div class="gplay">
+                            <div class="g">
+                                <div class="icon"><i class="fa-brands fa-google-play"></i></div>
+                                <span>Get it from</span>
+                                <div class="efg">Google Play</div>
+                            </div>
+                        </div>
+                        <div class="appstore">
+                            <div class="g">
+                                <div class="icon"><i class="fa-brands fa-app-store"></i></div>
+                                <span>Download on the</span>
+                                <div class="efg">App Store</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="image/phone2.png" alt="">
+
+            </div>
+        </section>
+
+        <!-- footer page  -->
+        <footer id="contact">
+            <div class="container">
+                <div class="part1">
+                    <div class="h">
+                        <h2>
+                            Elfeky<span>.bros</span>
+                        </h2><br>
+                        <p>
+                            The Quran is the central religious text of islam
+                        </p>
+                    </div>
+                    <div class="ic">
+                        <a target="_blank" href="https://web.facebook.com/aboayman.elfeky">
+                            <!-- <i class="fa-brands fa-facebook"></i> -->
+                            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/nlsfemdg.json" trigger="morph" state="morph-square"
+                                style="width:50px;height:50px">
+                            </lord-icon>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/eng_abo_ayman?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                            <!-- <i class="fa-brands fa-instagram"></i> -->
+                            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/nnfbxwtf.json" trigger="morph" state="morph-square"
+                                style="width:50px;height:50px">
+                            </lord-icon>
+                        </a>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=201271928329">
+                            <!-- <i class="fa-brands fa-whatsapp"></i> -->
+                            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/fjuachvi.json" trigger="morph" state="morph-square"
+                                style="width:50px;height:50px">
+                            </lord-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="part2">
+                    <h5>
+                        About Elfeky.bros
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="#s">Our Members </a>
+                        </li>
+                        <li>
+                            <a href="#w">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#w">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="part3">
+                    <h5>
+                        Important Links
+                    </h5>
+                    <ul>
+                        <li><a href="#">Telegram Channel</a></li>
+                        <li><a href="#">Learn Jerman</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </footer>
+
+    </div>
+    <script src="file.js"></script>
+</body>
+</html>
