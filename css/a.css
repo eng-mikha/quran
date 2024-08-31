@@ -25,8 +25,6 @@
 }
 /* end scroll bar  */
 
-
-
   /* Small */
 @media (min-width: 768px) {
     .container {
@@ -57,7 +55,8 @@
 }
 body {
     background: white;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Lemonada", cursive;
     position: relative;
 }
 .container {
@@ -105,11 +104,11 @@ nav h1 {
     color: var(--fmain-c);
     padding: 15px 10px ;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     /* background-color: #1ba1704d; */
 }
 nav h1 span {
-    font-size: 15px;
+    font-size: 10px;
     color: black;
     font-weight: 100;
 }
@@ -162,6 +161,7 @@ nav ul a{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    direction: rtl;
 }
 .fpage .container {
     display: flex;
@@ -175,8 +175,8 @@ nav ul a{
     /* background-color: #1ba16f; */
 } 
 .fpage h2 {
-    font-size: 40px;
-    font-weight: bolder;
+    font-size: 25px;
+    font-weight: 700;
     margin-left: 50px;
     margin-bottom: 30px;
     color: #242424;
@@ -250,9 +250,17 @@ nav ul a{
     .fpage .b div {
         width: 150px;
         height: 50px;
+        font-size: 15px;
     }
     .fpage h2 {
-        font-size: 35px;
+        text-align: center;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .fpage p {
+        text-align: center;
+        font-size: 15px;
+        margin-left: 5px;
     }
     .fpage .cir {
         width: 300px;
@@ -289,6 +297,7 @@ nav ul a{
 .ndpage {
     background-color: white;
     display: flex;
+    direction: rtl;
     flex-wrap: wrap;
     min-height: 100vb;
     align-items: center;
@@ -337,6 +346,7 @@ nav ul a{
     width: 200px;
     padding: 15px 0 ;
     margin-top: 50px;
+    font-family: "Lemonada", cursive;
     font-size: 18px;
     font-weight: bold;
     color: var(--font-color);
@@ -377,6 +387,8 @@ nav ul a{
     flex-wrap: wrap;
     align-items: center; 
     justify-content: center;
+    margin-top: 30px;
+    direction: rtl;
 }   
 .thpage .container {
     flex-direction: column;
@@ -384,9 +396,10 @@ nav ul a{
 
 .thpage h3 {
     color: var(--font-color);
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     margin: 20px 0;
+    text-align: center;
 }
 .thpage .thirdpbar .search {
     width: 300px;
@@ -397,13 +410,14 @@ nav ul a{
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
+    font-family: "Lemonada", cursive;
 }
 .thpage .thirdpbar .ser {
     position: relative;
 }
 .fa-solid {
     position: absolute;
-    right: 30px;
+    left: 30px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -509,11 +523,11 @@ nav ul a{
 }
 .readsurah .surah h4 {
     margin: 5px 30px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
 }
 .readsurah .surah span {
-    font-size: 20px;
+    font-size: 15px;
     margin: 5px 40px;
     color: var(--font-color);
 }
@@ -530,6 +544,7 @@ nav ul a{
     color: var(--font-color);
     border: 2px solid #bbbbbb;
     border-radius: 10px;
+    font-family: "Lemonada", cursive;
 } 
 
 /* fourth page  */
@@ -550,7 +565,7 @@ nav ul a{
 }
 
 .f4page h3 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
     max-width: 500px;
@@ -573,14 +588,100 @@ nav ul a{
     width: 65%;
     height: 100%;
     border-radius: 10px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
 }
 .f4page .fou .showcontrols p {
     margin: 30px 0;
 }
+.f4page .fou .allsurah {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: var(--fo-c);
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+}
 
+@media (max-width: 767px) {
+    .f4page h3 {
+        font-size: 25px;
+        line-height: 1.8;
+    }
+
+    .f4page .fou {
+        flex-direction: column;
+    }
+
+    .f4page .fou .showcontrols {
+        margin-bottom: 50px;
+        width: 90%;
+        font-size: 30px;
+    }
+
+    .f4page .fou .allsurah {
+        width: 65%;
+    }
+
+    .f4page .fou .showcontrols audio {
+        margin-top: 50px;
+    }
+}
+
+.f4page .fou .allsurah .su {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    align-items: center;
+    background-color: var(--other-c);
+    margin: 10px 0;
+    border-radius: 10px;
+    counter-increment: co;
+    position: relative;
+}
+
+.f4page .fou .allsurah .su:hover {
+    background-image: linear-gradient(45deg, var(--fmain-c),
+            var(--smain-c));
+}
+
+.f4page .fou .allsurah .su:hover::before {
+    background-image: linear-gradient(0deg, #27c0ac, #26b17e);
+}
+
+.f4page .fou .allsurah .su::before {
+    content: counter(co);
+    width: 35px;
+    height: 35px;
+    background-color: var(--befor-c);
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    direction: ltr;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.f4page button {
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient(45deg, var(--fmain-c),
+            var(--smain-c));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 50px;
+}
 
 /* start audio shape */
 
@@ -607,26 +708,6 @@ nav ul a{
     flex-direction: column;
     justify-content: center;
 }
-
-/* .track-art {
-    margin: 25px;
-    height: 250px;
-    width: 250px;
-    border: 2px solid #FFFAFA;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    -moz-box-shadow: 0px 6px 5px black;
-    -webkit-box-shadow: 0px 6px 5px black;
-    box-shadow: 0px 6px 5px black;
-    -moz-border-radius: 190px;
-    -webkit-border-radius: 190px;
-    border-radius: 190px;
-} */
-
-/* .now-playing {
-    font-size: 30px;
-} */
 
 .track-name {
     font-size: 40px;
@@ -764,16 +845,6 @@ p {
     animation: rotation 8s infinite linear;
 }
 
-/* @keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(359deg);
-    }
-} */
-
 .loader {
     height: 70px;
     display: flex;
@@ -829,23 +900,6 @@ p {
     animation-delay: 0s;
 }
 /* end audio shape */
-/* start audio effects  */
-
-/* .showcontrols audio {
-    width: 90%;
-    margin: 100px 0 40px;
-    
-}
-
-.showcontrols audio::-webkit-media-controls-panel {
-    background-image: linear-gradient(45deg, var(--fmain-c),
-                var(--smain-c));
-}
-
-.showcontrols audio::-webkit-media-controls-play-button {
-    background-color: rgb(173, 230, 185);
-    border-radius: 50%;
-}
 
 .showcontrols audio::-webkit-media-controls-current-time-display {
     color: #333;
@@ -886,85 +940,7 @@ p {
 } */
 /* end audio effects */
 
-.f4page .fou .allsurah {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    background-color: var(--fo-c);
-    border-radius: 10px;
-    font-size: 30px;
-    color: white;
-}
-@media (max-width: 767px) {
-    .f4page h3{
-        font-size: 30px;
-        line-height: 1.8;
-    }
-    .f4page .fou {
-        flex-direction: column;
-    }
 
-    .f4page .fou .showcontrols {
-        margin-bottom: 50px;
-        width: 90%;
-        font-size: 30px;
-    }
-    .f4page .fou .allsurah {
-        width: 65%;
-    }
-    .f4page .fou .showcontrols audio {
-        margin-top: 50px;
-    }
-}
-.f4page .fou .allsurah .su {
-    width: 90%;
-    height: 80px;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 40px;
-    align-items: center;
-    background-color: var(--other-c);
-    margin: 10px 0 ;
-    border-radius: 10px;
-    counter-increment: co;
-    position: relative;
-}
-
-.f4page .fou .allsurah .su:hover {
-    background-image: linear-gradient(45deg, var(--fmain-c),
-                var(--smain-c));
-}
-.f4page .fou .allsurah .su:hover::before {
-    background-image: linear-gradient(0deg, #27c0ac,#26b17e);
-}
-.f4page .fou .allsurah .su::before {
-    content: counter(co);
-    width: 35px;
-    height: 35px;
-    background-color: var(--befor-c);
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    direction: ltr;
-    font-weight: bold;
-    font-size: 20px;
-}
-.f4page button {
-    width: 200px;
-    height: 50px;
-    background-image: linear-gradient(45deg, var(--fmain-c),
-                var(--smain-c));
-    color: white;
-    border: none;
-    border-radius: 10px;
-    margin: 50px;
-}
 
 /* fifth page  */
 
@@ -974,11 +950,13 @@ p {
     min-height: 100vb;
     justify-content: center;
     align-items: center;
+    
 }
 .f5page .container {
     justify-content: space-between;
     align-items: center;
     margin: 50px 0;
+    direction: rtl;
 }
 .f5page .w {
     display: flex;
@@ -989,11 +967,11 @@ p {
     height: 80%;
 }
 .f5page .w h4 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
 }
 .f5page .w p {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     color: var(--font-color);
     margin: 50px 0;
@@ -1010,7 +988,12 @@ p {
     .f5page .w {
         width: 90%;
     }
-
+    .f5page .w h4 {
+        font-size: 25px;
+    }
+    .f5page .w p {
+        font-size: 20px;
+    }
 }
 .app {
     display: flex;
@@ -1028,14 +1011,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .gplay .g {
     position: relative;
 }
 .gplay .g .icon {
     position: absolute;
-    left: -40px;
+    right: -40px;
     top: 3px;
     font-size: 30px;
 }
@@ -1060,7 +1042,7 @@ p {
 }
 .appstore .g .icon {
     position: absolute;
-    left: -40px;
+    right: -40px;
     top: 3px;
     font-size: 30px;
 }
@@ -1078,11 +1060,11 @@ p {
     }
     .app .g .icon {
         font-size: 25px;
-        left: -10px;
+        right: -5px;
     }
     .app span,
     .app .efg {
-        margin-left: 20px;
+        margin-right: 25px;
     }
     .f5page img {
         width: 300px;
@@ -1098,7 +1080,15 @@ p {
         gap: 30px;
         align-items: center;
         width: fit-content;
-            margin: 0 auto;
+        margin: 0 auto;
+    }
+    .gplay,
+    .appstore {
+        width: 250px;
+        height: 70px;
+    }
+    .app .g .icon {
+        right: -30px;
     }
 }
 /* sexth page  */
