@@ -595,16 +595,21 @@ nav ul a{
 .f4page .fou .showcontrols p {
     margin: 30px 0;
 }
+.f4page .fou .all-suras {
+    width: 30%;
+    height: 80vb;
+    overflow-y: auto;
+}
 .f4page .fou .allsurah {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
     background-color: var(--fo-c);
     border-radius: 10px;
     font-size: 20px;
     color: white;
+    width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -624,34 +629,38 @@ nav ul a{
     }
 
     .f4page .fou .allsurah {
+        width: 100%;
+    }
+    .f4page .fou .all-suras {
         width: 65%;
     }
-
     .f4page .fou .showcontrols audio {
         margin-top: 50px;
     }
 }
 
 .f4page .fou .allsurah .su {
+    position: relative;
     width: 90%;
     height: 80px;
     display: flex;
     justify-content: flex-end;
-    padding-right: 40px;
     align-items: center;
     background-color: var(--other-c);
     margin: 10px 0;
+    padding-right: 40px;
     border-radius: 10px;
     counter-increment: co;
-    position: relative;
 }
 
-.f4page .fou .allsurah .su:hover {
+.f4page .fou .allsurah .su:hover,
+.f4page .fou .allsurah .active-surah {
     background-image: linear-gradient(45deg, var(--fmain-c),
             var(--smain-c));
 }
 
-.f4page .fou .allsurah .su:hover::before {
+.f4page .fou .allsurah .su:hover::before,
+.f4page .fou .allsurah .active-surah::before {
     background-image: linear-gradient(0deg, #27c0ac, #26b17e);
 }
 
@@ -832,8 +841,7 @@ i,
 i.fa-play-circle,
 i.fa-pause-circle,
 i.fa-step-forward,
-i.fa-step-backward,
-p {
+i.fa-step-backward {
     cursor: pointer;
 }
 
