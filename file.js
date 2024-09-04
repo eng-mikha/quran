@@ -109,6 +109,7 @@ function repeatTrack(){
 function playpauseTrack(){
     isPlaying ? pauseTrack() : playTrack();
 }
+
 function playTrack(){
     curr_track.play();
     isPlaying = true;
@@ -171,3 +172,18 @@ function setUpdate(){
         total_duration.textContent = durationMinutes + ":" + durationSeconds;
     }
 }
+
+// my try
+
+let surah1 = document.querySelector("#n1");
+let surah2 = document.querySelector("#n2");
+let surah3 = document.querySelector("#n3");
+let surah4 = document.querySelector("#n4");
+let surah5 = document.querySelector("#n5");
+let surah6 = document.querySelector("#n6");
+
+surah1.addEventListener("click", function() {
+    curr_track.src ='audio/mسورة_لقمان_.m4a'; 
+    track_name.textContent = 'سورة لقمان';
+    curr_track.play();
+});
