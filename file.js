@@ -23,29 +23,100 @@ let updateTimer;
 const music_list = [
     {
         name : 'سورة يوسف',
-        artist : 'أحمد أيمن الفقى',
-        music : 'audio/سورة يوسف ..._.m4a'
+        music : 'audio/12 يوسف.m4a'
     },
     {
         name : 'سورة الرعد',
-        artist : 'أحمد أيمن الفقى',
-        music : 'audio/الرعد.m4a'
+        music : 'audio/13 الرعد.m4a'
     },
     {
-        name : 'سورة الحديد',
-        artist : 'أحمد أيمن الفقى',
-        music : 'audio/سورة الحديد .mp3'
-    },
-    {
-        name : 'سورة لقمان',
-        artist : 'أحمد أيمن الفقى',
-        music : 'audio/mسورة_لقمان_.m4a'
+        name : 'سورة إبراهيم',
+        music : 'audio/14 ابراهيم.m4a'
     },
     {
         name : 'سورة مريم',
-        artist : 'أحمد أيمن الفقى',
-        music : 'audio/سورة_مريم_-_أحمد_أيمن.m4a'
-    }
+        music : 'audio/19 مريم.mp3'
+    },
+    {
+        name : 'سورة طه',
+        music : 'audio/20 طه.m4a'
+    },
+    {
+        name : 'سورة الفرقان',
+        music : 'audio/25 الفرقان.mp3'
+    },
+    {
+        name : 'سورة لقمان',
+        music : 'audio/31 لقمان.m4a'
+    },
+    {
+        name : 'سورة الرحمن',
+        music : 'audio/55 الرحمن.mp3'
+    },
+    {
+        name : 'سورة الواقعة',
+        music : 'audio/56 الواقعة.m4a'
+    },
+    {
+        name : 'سورة الحديد',
+        music : 'audio/57 الحديد.mp3'
+    },
+    {
+        name : 'سورة المجادلة',
+        music : 'audio/58 المجادلة.mp3'
+    },
+    {
+        name : 'سورة الحشر',
+        music : 'audio/59 الحشر.mp3'
+    },
+    {
+        name : 'سورة الممتحنة',
+        music : 'audio/60 الممتحنة.mp3'
+    },
+    {
+        name : 'سورة الصف',
+        music : 'audio/61 الصف.mp3'
+    },
+    {
+        name : 'سورة الجمعة',
+        music : 'audio/62 الجمعة.mp3'
+    },
+    {
+        name : 'سورة المنافقون',
+        music : 'audio/63 المنافقون.mp3'
+    },
+    {
+        name : 'سورة التغابن',
+        music : 'audio/64 التغابن.mp3'
+    },
+    {
+        name : 'سورة الطلاق',
+        music : 'audio/65 الطلاق.mp3'
+    },
+    {
+        name : 'سورة التحريم',
+        music : 'audio/66 التحريم.mp3'
+    },
+    {
+        name : 'سورة الملك',
+        music : 'audio/67 الملك.mp3'
+    },
+    {
+        name : 'سورة القلم',
+        music : 'audio/68 القلم.mp3'
+    },
+    {
+        name : 'سورة الحاقة',
+        music : 'audio/69 الحاقة.mp3'
+    },
+    {
+        name : 'سورة الجن',
+        music : 'audio/72 الجن.m4a'
+    },
+    {
+        name : 'سورة القيامة',
+        music : 'audio/75 القيامة.mp3'
+    },
 ];
 
 loadTrack(track_index);
@@ -109,6 +180,7 @@ function repeatTrack(){
 function playpauseTrack(){
     isPlaying ? pauseTrack() : playTrack();
 }
+
 function playTrack(){
     curr_track.play();
     isPlaying = true;
@@ -170,4 +242,140 @@ function setUpdate(){
         curr_time.textContent = currentMinutes + ":" + currentSeconds;
         total_duration.textContent = durationMinutes + ":" + durationSeconds;
     }
+}
+
+// my try
+
+const sora = [
+    {
+        name : 'يوسف',
+        music : 'audio/12 يوسف.m4a'
+    },
+    {
+        name : 'الرعد',
+        music : 'audio/13 الرعد.m4a'
+    },
+    {
+        name : 'إبراهيم',
+        music : 'audio/14 ابراهيم.m4a'
+    },
+    {
+        name : 'مريم',
+        music : 'audio/19 مريم.mp3'
+    },
+    {
+        name : 'طه',
+        music : 'audio/20 طه.m4a'
+    },
+    {
+        name : 'الفرقان',
+        music : 'audio/25 الفرقان.mp3'
+    },
+    {
+        name : 'لقمان',
+        music : 'audio/31 لقمان.m4a'
+    },
+    {
+        name : 'الرحمن',
+        music : 'audio/55 الرحمن.mp3'
+    },
+    {
+        name : 'الواقعة',
+        music : 'audio/56 الواقعة.m4a'
+    },
+    {
+        name : 'الحديد',
+        music : 'audio/57 الحديد.mp3'
+    },
+    {
+        name : 'المجادلة',
+        music : 'audio/58 المجادلة.mp3'
+    },
+    {
+        name : 'الحشر',
+        music : 'audio/59 الحشر.mp3'
+    },
+    {
+        name : 'الممتحنة',
+        music : 'audio/60 الممتحنة.mp3'
+    },
+    {
+        name : 'الصف',
+        music : 'audio/61 الصف.mp3'
+    },
+    {
+        name : 'الجمعة',
+        music : 'audio/62 الجمعة.mp3'
+    },
+    {
+        name : 'المنافقون',
+        music : 'audio/63 المنافقون.mp3'
+    },
+    {
+        name : 'التغابن',
+        music : 'audio/64 التغابن.mp3'
+    },
+    {
+        name : 'الطلاق',
+        music : 'audio/65 الطلاق.mp3'
+    },
+    {
+        name : 'التحريم',
+        music : 'audio/66 التحريم.mp3'
+    },
+    {
+        name : 'الملك',
+        music : 'audio/67 الملك.mp3'
+    },
+    {
+        name : 'القلم',
+        music : 'audio/68 القلم.mp3'
+    },
+    {
+        name : 'الحاقة',
+        music : 'audio/69 الحاقة.mp3'
+    },
+    {
+        name : 'الجن',
+        music : 'audio/72 الجن.m4a'
+    },
+    {
+        name : 'القيامة',
+        music : 'audio/75 القيامة.mp3'
+    },
+];
+
+// active-surah
+
+let i = 1 ;
+
+let allsurah = document.querySelector(".allsurah");
+while (i<=24) {
+    var s = document.createElement(`div`);
+    s.textContent = sora[i-1].name;
+    s.setAttribute('class',`su surah${i}`);
+    allsurah.appendChild(s);
+
+    
+    
+    i++;
+};
+
+
+function sorahNum(num) {
+    var surah = document.querySelector(`.surah${num}`);
+    
+    surah.addEventListener("click", function() {
+        curr_track.src = music_list[num-1].music; 
+        track_name.textContent = music_list[num-1].name;
+        if(isPlaying = true){
+            curr_track.play();
+            wave.classList.add('loader');
+            playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+        }
+    });
+};
+
+for(let i = 1; i<=24 ; i++) {
+    sorahNum(i);
 }
