@@ -104,7 +104,7 @@ body {
 }
 .container .a1:nth-child(2) {
     .photo {
-        background-image: linear-gradient(45deg, #673AB7, #2196F3);
+        background-image: linear-gradient(45deg, #673AB7, #f321bc);
         img {
         width: 300px;
         position: relative;
