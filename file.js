@@ -385,3 +385,11 @@ for(let i = 1; i<=24 ; i++) {
 function navigate() {
     window.location.href = "about.html"; // ضع رابط الصفحة هنا
 }
+
+function navigateOne() {
+    window.location.href = "#read"; // ضع رابط الصفحة هنا
+}
+
+function navigateTwo() {
+    window.location.href = "#listen"; // ضع رابط الصفحة هنا
+}
