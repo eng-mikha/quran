@@ -13,7 +13,9 @@
     box-sizing: border-box;
 }
 /* start scroll bar  */
-
+html {
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -227,10 +229,12 @@ nav ul a{
     background-image: linear-gradient(45deg, var(--fmain-c), 
     var(--smain-c));
     color: white;
+    cursor: pointer;
 }
 .fpage .b .aud {
     border: 2px solid var(--font-color);
     color: var(--font-color);
+    cursor: pointer;
 }
 .fpage .back {
     position: absolute;
