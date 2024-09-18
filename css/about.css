@@ -120,6 +120,13 @@ body {
     }
 }
 @media (max-width: 767px) {
+    .container .a1:nth-child(2) {
+        .photo {
+            img {
+                left: 0;
+            }
+        }
+    }
     .container .a1{
         justify-content: center;
         .text {
@@ -137,7 +144,12 @@ body {
             border-bottom-left-radius: 30px;
             border-bottom-right-radius: 30px;
         }
+        .contact {
+            margin-top: 50px;
+            margin-right: 0px;
+        }
     } 
+    
 }
 
 /* End Page  */
