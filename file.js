@@ -15,6 +15,8 @@ let wave = document.getElementById('wave');
 let randomIcon = document.querySelector('.fa-random');
 let curr_track = document.createElement('audio');
 
+let aboutbtn = document.querySelector(".story")
+
 let track_index = 0;
 let isPlaying = false;
 let isRandom = false;
@@ -378,4 +380,8 @@ function sorahNum(num) {
 
 for(let i = 1; i<=24 ; i++) {
     sorahNum(i);
+}
+
+function navigate() {
+    window.location.href = "about.html"; // ضع رابط الصفحة هنا
 }
